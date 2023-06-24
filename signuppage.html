@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_page</title>
+    
+     <!--BOOTSTRAP CONNECTIONS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/6266d10c67.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="icon" type="image/x-icon" href="logo.jpg">
+</head>
+<style>
+    *{
+        padding:0px;
+        margin:0px;
+    }
+    
+     body{
+        background-image: url('.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .head{
+        margin-bottom: 230px;
+        margin-left: 50px;
+        margin-right: 800px;
+        margin-top: 100px;
+        text-align: center;
+        background-color:  rgb(230, 231, 239);
+        border-radius: 50px;
+    }
+    .sub{
+        margin-top: 10px;
+    }
+    
+    .lists{
+       
+        margin-top:0px;
+        padding-left: 300px;
+        
+        background-color: rgb(230, 231, 239);
+        color: rgb(229, 230, 234);
+        padding-bottom: 30px;
+    }
+    .logoo{
+        position:absolute;
+        height: 80px;
+        left:5px;
+        width:80px;
+        border-radius: 50px;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    h1{
+       font-family: 'Satisfy', cursive; 
+       margin-left: 70px;
+       margin-top: 50px;
+    }
+    .stylebutton{
+        margin-left: 180px;
+        padding: 1%;
+        border-radius: 20px;  
+        margin-top: -900px;
+        background-color: rgb(245, 41, 41);
+        color: white;    
+    }
+   
+</style>
+<body>
+   
+    <div>
+        <div class="navbar-header">
+            
+          <img src="logo.jpg" class="logoo"> <a class="navbar-brand"href="#" style="margin-left: 70px;padding: 65px;color:whitesmoke; ">
+           <b style="color: black;">Career Path</b> </a>
+           </div>
+           <div class="topnav-right">
+               <div class="lists">
+                <br>
+                <br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;<a href="post_job.html" style="color:rgb(58, 54, 54);font-size: 20px;"  > Post Job</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   
+                   <a href="about.html#"  style="color:rgb(58, 54, 54);font-size: 20px;">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   
+                   <a href="resources.html"  style="color:rgb(58, 54, 54);font-size: 20px;">Help Center</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   
+                   <a href="registrationpage.html#"  style="color:rgb(58, 54, 54);font-size: 20px;">Sign up</a>
+                   <button class="btn" style="border-radius:90%; padding-left: 1px; padding-right: 10px;">
+                    <i class="fa-solid fa-user fa-2xl" style="color: #000000;padding-left: 30px; "></i></button>
+        
+                    
+                  </button>
+                </div>
+        </div>
+    </div>
+   <div style="margin-right: 500px; text-align: left;"> <h1> " WELCOME TO  Career Path<br>to build you Career Path "</h1></div>
+   
+    <div class="head">
+        
+        <h2 style="color: black">LOGIN</h2>
+        <form action="/action_page.php">
+            <label for="fname" style="color: rgb(0, 0, 0);">user name</label><br>
+            <input type="text" style="color: black;" id="fname" name="fname"><br>
+            <label for="lname" style="color: black; ">password</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            
+            <input type="button" onclick="location.href='jobpage.html';" value="submit" />
+            <a href="registrationpage.html" target="_blank">
+                <p>
+                <u>Create an account?</u>
+                </p>
+
+            </a>
+            <br>
+        </form>
+    </div>
+    <div style="margin-left: 600px; margin-top: -650px; border-radius: 100px;">
+        <img src="pic.jpg">
+        
+    </div>
+    <button class="stylebutton"> Sign In With GOOGLE </button>
+    
+    
+    
+    
+</body>
+</html>

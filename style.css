@@ -1,0 +1,231 @@
+*{
+  padding:0px;
+  margin:0px;
+  margin-bottom: 0px;
+}
+.lists{
+  letter-spacing:2px;
+  margin-top:-50px;
+  padding-left: 300px;
+  word-spacing: 60px;
+  background-color: rgb(249, 249, 255);
+  color: aliceblue;
+  margin-top: -100px;
+  
+}
+.logoo{
+  position:fixed;
+  height: 80px;
+  left:5px;
+  width:70px;
+  margin-top: 10px;
+  align-items:last baseline ;
+  margin-left: 20px;
+  margin-top: -50px;
+
+}
+h1{
+  font-family: 'Satisfy', cursive;
+}
+.search{
+margin-top: 30px;
+margin-left: 310px;
+width: 600px;
+height: 50px;
+background-color: azure;
+border-width: 10px;
+border-radius: 20px;
+
+
+}
+:root {
+  --bgColor: white;
+  --inputColor: black;
+  --outlineColor: dodgerblue;
+  --beamColor: rgb(246, 246, 232);
+  --spacer: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: var(--bgColor);
+}
+
+body.show-password {
+  --bgColor: black;
+  --inputColor: white;
+  --outlineColor: var(--beamColor);
+}
+
+form {
+  transform: translate3d(0, 10, 0);
+  padding: var(--spacer);
+ 
+}
+form > * + * {
+  margin-top: var(--spacer);
+  transform: rotate(90deg);
+  
+}
+
+.form-item > * + * {
+  margin-top: 0.5rem;
+  
+}
+
+label,
+input,
+button {
+  font-size: 1.5rem;
+  font-family: monospace;
+  color: var(--inputColor);
+}
+label:focus,
+input:focus,
+button:focus {
+  outline: 3px solid var(--outlineColor);
+  outline-offset: 2px;
+ 
+}
+label::-moz-focus-inner,
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: none;
+}
+label[id=password],
+input[id=password],
+button[id=password] {
+  color: black;
+}
+
+
+
+[id=submit] {
+  cursor: pointer;
+  margin-top: 10px;
+
+  color: var(--bgColor);
+  background-color: var(--inputColor);
+  box-shadow: 4px 4px 0 rgba(54, 55, 57, 0.2);
+
+}
+[id=submit]:active {
+  transform: translateY(1px);
+  margin-top: 10px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+input {
+  padding: 0.75rem 4rem 0.75rem 0.75rem;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px black, inset 6px 6px 0 rgba(30, 144, 255, 0.2), 3px 3px 0 rgba(30, 144, 255, 0.2);
+  
+}
+input:focus {
+  outline-offset: 1px;
+}
+.show-password input {
+  box-shadow: inset 0 0 0 2px black;
+  border: 2px dashed white;
+}
+.show-password input:focus {
+  outline: none;
+  border-color: var(--beamColor);
+}
+
+[id=eyeball] {
+  --size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 100%;
+  right: 0.75rem;
+  border: none;
+  background-color: transparent;
+  transform: translateY(-50%);
+}
+[id=eyeball]:active {
+  transform: translateY(calc(-50% + 1px));
+}
+
+.eye {
+ 
+  width: var(--size);
+  height: var(--size);
+  border: 2px solid var(--inputColor);
+  border-radius: calc(var(--size) / 1.5) 0;
+  transform: rotate(0deg);
+  margin-top: 550px;
+ margin-right: 540px;
+
+}
+.eye:before, .eye:after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  
+}
+
+
+[id=beam] {
+  position: absolute;
+ 
+  right: 1.75rem;
+  -webkit-clip-path: polygon(100% 50%, 100% 50%, 0 0, 0 100%);
+          clip-path: polygon(100% 50%, 100% 50%, 0 0, 0 100%);
+  width: 100vw;
+  height: 25vw;
+  z-index: 1;
+  mix-blend-mode: multiply;
+  transition: transform 200ms ease-out;
+  transform-origin: 100% 50%;
+  transform: translateY(-80%) rotate(var(--beamDegrees, 0));
+  pointer-events: none;
+  transform: rotate(-90deg);
+  margin-top: 10px;
+}
+.show-password [id=beam] {
+  background: var(--beamColor);
+}
+.lists{
+  margin-top:0px;
+  padding-left: 300px;
+  
+  background-color: rgb(230, 231, 239);
+  color: rgb(229, 230, 234);
+  padding-bottom: 30px;
+}
+.logoo{
+      position:absolute;
+      height: 80px;
+      left:5px;
+      width:80px;
+      border-radius: 50px;
+      margin-top: 10px;
+      margin-left: 50px;
+  }
+.head .error-text{
+  display:flex;
+  align-items: center;
+  margin-top: 6px;
+  color: red;
+  font-size: 15px;
+}

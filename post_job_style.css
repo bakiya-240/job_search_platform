@@ -1,0 +1,77 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+ body{
+    background-image: url('.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head{
+    margin-bottom: 230px;
+    margin-left: 95px;
+    margin-right: 100px;
+    margin-top: 120px;
+    
+    background-color:  rgb(230, 231, 239);
+    border-radius: 50px;
+    font-size: 20px;
+
+}
+.head input{
+    padding: 7px;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+
+.registerbtn{
+
+    margin-left: 700px;
+   background-color: rgb(61, 61, 211);
+   color: white;
+   border-radius: 20px;
+    padding: 15px;
+}
+.registerbtn:hover {
+    background-color: rgb(16, 45, 83);
+  }
+
+h2{
+    text-align: center;
+}
+.sub{
+    margin-top: 10px;
+}
+
+.lists{
+   
+    margin-top:0px;
+    padding-left: 300px;
+    
+    background-color: rgb(230, 231, 239);
+    color: rgb(229, 230, 234);
+    padding-bottom: 30px;
+}
+.logoo{
+    position:absolute;
+    height: 80px;
+    left:5px;
+    width:80px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+h1{
+   font-family: 'Satisfy', cursive; 
+   margin-left: 70px;
+   margin-top: 50px;
+}
+.stylebutton{
+    margin-left: 180px;
+    padding: 1%;
+    border-radius: 20px;  
+    margin-top: -900px;
+    background-color: rgb(245, 41, 41);
+    color: white;    
+}

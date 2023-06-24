@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-signin-client_id" content="448925135045-dk45nb05otj7otkj5g78i8k51faltc62.apps.googleusercontent.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+     <!--BOOTSTRAP CONNECTIONS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/6266d10c67.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="icon" type="image/x-icon" href="logo.jpg">
+</head>
+<style>
+    *{
+        padding:0px;
+        margin:0px;
+    }
+    
+     body{
+        background-image: url('.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .head{
+        margin-bottom: 230px;
+        margin-left: 50px;
+        margin-right: 800px;
+        margin-top: 100px;
+        text-align: center;
+        background-color:  rgb(230, 231, 239);
+        border-radius: 50px;
+    }
+    .sub{
+        margin-top: 10px;
+    }
+    
+    .lists{
+       
+        margin-top:0px;
+        padding-left: 300px;
+        
+        background-color: rgb(230, 231, 239);
+        color: rgb(229, 230, 234);
+        padding-bottom: 30px;
+    }
+    .logoo{
+        position:absolute;
+        height: 80px;
+        left:5px;
+        width:80px;
+        border-radius: 50px;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    h1{
+       font-family: 'Satisfy', cursive; 
+       margin-left: 70px;
+       margin-top: 50px;
+    }
+.SUBMIT {
+  background-color:yellow;
+  padding: 10px;
+}
+   
+</style>
+<body>
+    <script src ="script.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <div>
+        <div class="navbar-header">
+          <img src="logo.jpg" class="logoo"> <a class="navbar-brand"href="#" style="margin-left: 70px;padding: 65px;color:whitesmoke; ">
+           <b style="color: black;">Career Path</b> </a>
+           </div>
+           <div class="topnav-right">
+               <div class="lists">
+                <br>
+                <br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;<a href="post_job.html" style="color:rgb(58, 54, 54);font-size: 20px;"  > Post Job</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   
+                   <a href="about.html#"  style="color:rgb(58, 54, 54);font-size: 20px;">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   
+                   <a href="resources.html"  style="color:rgb(58, 54, 54);font-size: 20px;">Help Center</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   
+                   <button class="btn" style="border-radius:90%; padding-left: 1px; padding-right: 10px;">
+                    <i class="fa-solid fa-user fa-2xl" style="color: #000000;padding-left: 30px; "></i></button>
+                    Me
+                    
+                  </button>
+                
+                </div>
+        </div>
+    </div>
+   <div style="margin-right: 500px; text-align: left;"> <h1> " WELCOME TO  Career Path<br>to build you Career Path "</h1></div>
+   
+    <div class="head">
+        <br>
+        <h2 style="color: black">Register</h2>
+        <form name="form1" action="#"><br>
+            
+            <label for="fname" style="color: rgb(3, 30, 53);">User name:</label>
+            <input type="text" id="fname" placeholder="Enter name" ><br><br> 
+           
+
+            <label for="email">email</label>
+            <input id="email" type="email" placeholder="Enter email">
+            <p id="result"></p>
+            <script src="mail.js"></script>
+              <br>  <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password"><br>
+              <br>  <label for="cnfrm-password">Confirm Password</label>
+                <input type="password" id="cnfrm-password" placeholder="Confirm password"><br><br>
+                <p id="message"></p>
+                <input type="button" onclick="submitForm()"  value="SUBMIT"/>
+     
+            <script src="password.js"></script>
+        
+        
+       <br>     <br>
+            <p  style="color: rgb(3, 30, 53)">By creating an account you agree to our <a href="about.html#">Terms & Privacy</a>.</p>
+            <div class="box"> <a href="signuppage.html" target="_blank">
+                <p>
+                <u>Already have an account?</u>
+                </p><br>
+                
+
+            </a>
+        
+     </div>
+     <div class="g-signin2" data-onsuccess="onSignIn"></div>
+     <div>
+        <button class="SUBMIT" id="btn" style="margin-bottom: 100PX;"  onclick="onSignIn()"> <span>SIGN In With GOOGLE </span> </button><br>
+        <script src="script.js"></script>
+      </div></div>
+   <br> <div style="margin-left: 700px; margin-top: -800px; border-radius: 100px;">
+        <img src=" registerpic.jpg" width="500" 
+        height="500">
+        <br>
+    </div>
+   
+</form>
+    
+    
+</body>
+</html>

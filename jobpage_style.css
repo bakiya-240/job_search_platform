@@ -1,0 +1,136 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+ body{
+    background-image: url('bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head{
+    margin-bottom: 300px;
+    margin-left: 350px;
+    margin-right: 400px;
+    margin-top: 150px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+.sub{
+    margin-top: 10px;
+}
+
+.lists{
+    margin-top:0px;
+    padding-left: 300px;
+    
+    background-color: rgb(230, 231, 239);
+    color: rgb(229, 230, 234);
+    padding-bottom: 30px;
+   
+}
+.logoo{
+        position:absolute;
+        height: 80px;
+        left:5px;
+        width:80px;
+        border-radius: 50px;
+        margin-top: 10px;
+        margin-left: 50px;
+       
+    }
+.search{
+    margin-top: 20px;
+    margin-left: 590px;
+    width: 300px;
+    height: 40px;
+    background-color:rgb(230, 231, 239);
+    border-width: 4px;
+    border-radius: 20px;
+
+}
+
+.page{
+    margin-top: -40px;
+margin-left: 350px;
+width: 200px;
+height: 30px;
+background-color:rgb(230, 231, 239);
+border-width: 4px;
+border-radius: 20px;
+text-align: center;
+
+}
+.joba{
+    padding: 20px;
+    background-color: rgb(230, 231, 239);
+    margin-top: 20px;
+    margin-left: 330px;
+margin-right: 200px;
+border-radius: 20px;
+}
+
+
+.sidenav {
+height: 80%;
+width: 300px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(230, 231, 239);
+overflow-x: hidden;
+margin-top: 110px;
+padding-top: 20px;
+text-align: left;
+border-radius: 20px;
+}
+
+.sidenav a {
+padding: 2px 4px 2px 6px;
+text-decoration: none;
+font-size: 20px;
+color: #493a3a;
+display: block;
+text-align: left;
+}
+
+.sidenav a:hover {
+color: #1f1b1b;
+}
+
+.main {
+margin-left: 160px; /* Same as the width of the sidenav */
+font-size: 28px; /* Increased text to enable scrolling */
+padding: 0px 10px;
+}
+.add{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    left: 1000px;
+    border-radius: 70px;
+    margin-top: 0px;
+    background-color: rgb(245, 242, 248);
+    border-style: solid;
+    border-color: rgb(7, 16, 99);
+    border-width: 3px;
+    margin-top: 15px;
+    
+}
+.addback{
+    background-color: aliceblue;
+    margin-top: -60px ;
+    margin-left: 1000px ;
+    margin-right: 140px ;
+    padding: 11px;
+    border-radius: 22px;
+    cursor: pointer;
+   
+}
+.addback:hover {
+background-color: rgb(41, 197, 222);
+
+}
+#more {display: none;}
